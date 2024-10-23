@@ -40,7 +40,7 @@
                 if (target.closest("div[id$=_prompt]") != null) {
                     return;
                 }
-                if (e.dataTransfer != null && e.dataTransfer.types[0] == "Files") {
+                if (e.dataTransfer != null && e.dataTransfer.types.includes("Files")) {
                     e.preventDefault();
                 }
             });
